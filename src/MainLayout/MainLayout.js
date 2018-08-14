@@ -4,12 +4,12 @@ import "./MainLayout.css";
 class MainLayout extends React.Component {
   render() {
     return (
-      <div className="wrapper">
-        <nav>
-          <ul id="menulist">
-            <li className="menuitem">About</li>
-            <li className="menuitem">Podcasts</li>
-            <li className="menuitem">Contact</li>
+      <div className="wrapper flexColumn flexHeight whiteBackground">
+        <nav className="wrapper">
+          <ul className="nav wrapper flexEnd">
+            <li>About</li>
+            <li>Podcasts</li>
+            <li>Contact</li>
           </ul>
         </nav>
 
@@ -23,7 +23,7 @@ class MainLayout extends React.Component {
         </div>
 
         <div id="content">
-                <div className="full-screen">
+          <div className="full-screen">
             <h1>2. Podcasts only for desktop users!</h1>
             <p>
               This example shows a menu that will float to the left of the page
